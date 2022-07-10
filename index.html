@@ -75,6 +75,7 @@
           <button class="main-btn" data-modal-open type="button">
             Заказать услугу
           </button>
+          <!-- Модальное окно -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="close-btn" data-modal-close type="button">
@@ -82,6 +83,78 @@
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <div class="modal-form">
+                <p class="form-header">
+                  Оставьте свои данные, мы вам перезвоним
+                </p>
+                <form class="form-form">
+                  <p class="form-name">Имя</p>
+                  <label class="form-set">
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="user-name"
+                      required
+                    />
+                    <svg class="form-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#form-person"></use>
+                    </svg>
+                  </label>
+                </form>
+                <form class="form-form">
+                  <p class="form-name">Телефон</p>
+                  <label class="form-set">
+                    <input
+                      class="form-input"
+                      type="tel"
+                      name="user-phone"
+                      required
+                    />
+                    <svg class="form-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#form-phone"></use>
+                    </svg>
+                  </label>
+                </form>
+                <form class="form-form">
+                  <p class="form-name">Почта</p>
+                  <label class="form-set">
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="user-email"
+                      required
+                    />
+                    <svg class="form-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#form-email"></use>
+                    </svg>
+                  </label>
+                </form>
+                <form class="form-form">
+                  <p class="form-name">Комментарий</p>
+                  <label>
+                    <textarea
+                      class="form-input form-feedback"
+                      name="user-feedback"
+                      cols="30"
+                      rows="10"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </label>
+                </form>
+                <form class="form-form1">
+                  <label class="checkbox-form">
+                    <input class="check-form-hidden" type="checkbox" />
+                    <svg class="form-icon-checked" width="16px" height="15px">
+                      <use href="./images/icons.svg#form-checked"></use>
+                    </svg>
+                    <p class="form-agree">
+                      Соглашаюсь с рассылкой и принимаю
+                      <span class="form-agree-link">Условия договора</span>
+                    </p>
+                  </label>
+                </form>
+                <button class="form-submit-btn" type="submit">Отправить</button>
+              </div>
             </div>
           </div>
         </div>
@@ -579,6 +652,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-div">
+          <h2 class="footer-str">Подпишитесь на рассылку</h2>
+          <div class="footer-form-section">
+            <form>
+              <label>
+                <input class="footer-form" type="text" placeholder="E-mail" />
+              </label>
+            </form>
+            <button class="footer-btn" type="submit">
+              <span class="footer-btn-desc">Подписаться</span>
+              <svg class="footer-telegram" wigth="24px" height="24px">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
